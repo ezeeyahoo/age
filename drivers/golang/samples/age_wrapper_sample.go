@@ -21,7 +21,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/apache/age/drivers/golang/age"
+	"github.ibm.com/MCNM/topology-api/external/age/drivers/golang/age"
 )
 
 // Do cypher query to AGE with Age API

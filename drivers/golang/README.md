@@ -1,4 +1,4 @@
-# age AGType parser and driver support for Golang 
+# age AGType parser and driver support for Golang
 
 AGType parser and driver support for [Apache AGE](https://age.apache.org/), graph extension for PostgreSQL.
 
@@ -17,27 +17,27 @@ Run (Linux & OSX):
 sh install.sh
 ```
 
-### Go get  
-``` 
-go get github.com/apache/age/drivers/golang
+### Go get
+```
+go get github.ibm.com/MCNM/topology-api/external/age/drivers/golang
 ```
 ### gomod
-``` 
-require  github.com/apache/age/drivers/golang {version}
+```
+require  github.ibm.com/MCNM/topology-api/external/age/drivers/golang {version}
 ```
 
 
-Check [latest version](https://github.com/apache/age/releases)
+Check [latest version](https://github.ibm.com/MCNM/topology-api/external/age/releases)
 
 ### For more information about [Apache AGE](https://age.apache.org/)
 * Apache Age : https://age.apache.org/
-* GitHub : https://github.com/apache/age
+* GitHub : https://github.ibm.com/MCNM/topology-api/external/age
 * Document : https://age.apache.org/docs/
 
 ### Check AGE loaded on your PostgreSQL
 Connect to your containerized Postgres instance and then run the following commands:
 ```(sql)
-# psql 
+# psql
 CREATE EXTENSION age;
 LOAD 'age';
 SET search_path = ag_catalog, "$user", public;
@@ -52,10 +52,10 @@ go test . -v
 ```
 
 ### Samples
-* Usage 1: using database/sql API and Cypher execution function 'ExecCypher' 
+* Usage 1: using database/sql API and Cypher execution function 'ExecCypher'
   Sample : [samples/sql_api_sample.go](samples/sql_api_sample.go)
 
-* Usage 2: using Age Wrapper 
+* Usage 2: using Age Wrapper
   Sample : [samples/age_wrapper_sample.go](samples/age_wrapper_sample.go)
 
 * Run Samples : [samples/main.go](samples/main.go)

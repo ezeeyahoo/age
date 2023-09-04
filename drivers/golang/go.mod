@@ -17,7 +17,7 @@
 //  * under the License.
 //  */
 
-module github.com/apache/age/drivers/golang
+module github.ibm.com/MCNM/topology-api/external/age/drivers/golang
 
 go 1.19
 
